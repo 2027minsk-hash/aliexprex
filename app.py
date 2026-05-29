@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 # Используем секреты, если они есть, или вставьте ключ сюда в кавычках
 api_key = st.secrets.get("GOOGLE_API_KEY", "ВАШ_API_КЛЮЧ_ОТ_GOOGLE_AI_STUDIO")
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-pro')
 genai.configure(api_key="AQ.Ab8RN6I8ey6QZtk3gBWdvAaV7O0kJHb7KrWQRvx0F5C-4zq5fQ")
 st.title("Анализатор отзывов AliExpress")
 url = st.text_input("Введите ссылку на товар AliExpress:")
