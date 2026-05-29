@@ -7,7 +7,7 @@ import time
 # Настройка Gemini API
 genai.configure(api_key="ВАШ_API_КЛЮЧ_ОТ_GOOGLE_AI_STUDIO")
 model = genai.GenerativeModel('gemini-1.5-flash')
-AQ.Ab8RN6I8ey6QZtk3gBWdvAaV7O0kJHb7KrWQRvx0F5C-4zq5fQ
+genai.configure(api_key="AQ.Ab8RN6I8ey6QZtk3gBWdvAaV7O0kJHb7KrWQRvx0F5C-4zq5fQ")
 st.title("Анализатор отзывов AliExpress")
 url = st.text_input("Введите ссылку на товар AliExpress:")
 
