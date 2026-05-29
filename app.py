@@ -1,4 +1,20 @@
 import streamlit as st
+import subprocess
+import os
+
+# Автоматическая установка браузеров Playwright при первом запуске
+if not os.path.exists("/home/appuser/.cache/ms-playwright"):
+    st.write("Первая настройка: скачиваю браузер...")
+    subprocess.run(["playwright", "install", "chromium"])
+    st.experimental_rerun()
+
+import google.generativeai as genai
+from playwright.sync_api import sync_playwright
+from bs4 import BeautifulSoup
+
+# ... (далее ваш остальной код с настройкой genai и анализом) ...
+
+import streamlit as st
 import google.generativeai as genai
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
